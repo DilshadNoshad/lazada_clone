@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/media_query.css" />
     <link rel="stylesheet" href="assets/css/main_style.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css"
+    />
+
+    <!-- owl carosel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <title>Blank html | D-vers</title>
   </head>
   <body>
@@ -46,6 +55,52 @@
     </header>
 
     <main>
+      <div id="hero_slider">
+      
+        <div class="owl-carousel owl-theme">
+          <div class="slide slide-1">
+            <section>
+            <div class="slider-content">
+              <a href=""><img src="https://icms-image.slatic.net/images/ims-web/09541eac-98c3-4f96-b0b4-be631701f7a4.jpg" alt=""></a>
+            </div>
+            </section>
+          </div>
+          <div class="slide slide-2">
+            <section>
+            <div class="slider-content">
+              <a href=""><img src="https://icms-image.slatic.net/images/ims-web/8020af5e-d676-4b52-8bfe-a7eb46fe0805.jpg" alt=""></a>
+            
+          </div>
+        </section>
+          </div>
+          <div class="slide slide-3">
+            <section>
+            <div class="slider-content">
+              <a href=""><img src="https://icms-image.slatic.net/images/ims-web/0ba6ef44-ed1b-42df-8830-adfb061302e6.jpg" alt=""></a></div>
+          </div>
+          
+        </section>
+        
+        </div>
+        
+        <div class="nav_menu-dropdown">
+          <ul>
+            <li><a href="">Electronic accessories</a></li>
+            <li><a href="">Electronic accessories</a></li>
+            <li><a href="">Electronic accessories</a></li>
+            <li><a href="">Electronic accessories</a></li>
+            <li><a href="">Electronic accessories</a></li>
+            <li><a href="">Electronic accessories</a></li>
+            <li><a href="">Electronic accessories</a></li>
+            <li><a href="">Electronic accessories</a></li>
+            <li><a href="">Electronic accessories</a></li>
+            <li><a href="">Electronic accessories</a></li>
+            <li><a href="">Electronic accessories</a></li>
+            <li><a href="">Electronic accessories</a></li>
+          </ul>
+        </div>
+      
+      </div>
       <div class="product_banner">
         <section>
           <div class="card-banner">
@@ -3126,4 +3181,25 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="assets/js/script.js"></script>
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- owl-carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- custom owl-carousel -->
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        smartSpeed: 150,
+        autoplayHoverPause: true,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn'
+      });
+    });
+  </script>
 </html>
