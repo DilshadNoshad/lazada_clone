@@ -23,24 +23,44 @@ html {
   --clr-slider2: #019116;
   --clr-slider3: #f60033;
   /* slider color end*/
-  font-size: 62.5%;
-  /* Default color variables */
+  /* tab color */
   --clr-one: #ecf5f8;
   --clr-two: #f8f1ea;
   --clr-three: #f9ebea;
   --clr-four: #f2eee9;
+  /* tab color end*/
+
+  font-size: 62.5%;
+  /* Default color variables */
+  --clr-yellow: #ffb916;
+  --clr-green: #88CE02;
   --clr-primary: #f57224;
   --clr-secondary: #000;
+  --clr-dark-blue: #000080;
+
   --clr-gray: #f5f5f5;
+  --clr-light-gray: #FAFAFA;
   --clr-light: #ffffff;
   --clr-dark-gray: #ccc;
   --clr-secondary-light: #2a2a2a;
   --clr-secondary-link: #606060;
   --clr-secondary-main: #424242;
+
+  /* font sizes */
+  --normal-xxl-font: 48px;
+  --normal-xl-font: 30px;
   --normal-bg-font: 22px;
   --normal-font: 16px;
   --normal-sm-font: 14px;
-  --clr-dark-blue: #000080;
+  --normal-xsm-font: 12px;
+
+}
+
+.success_clr {
+color: var(--clr-green);
+}
+.bolder {
+font-weight: 600;
 }
 
 body {
@@ -217,6 +237,8 @@ section {
 /* main navbar */
 header {
   display: none;
+  background: var(--clr-light);
+
 }
 
 #tab_main {
@@ -461,6 +483,7 @@ header {
   grid-row: 1/3;
 }
 figure img,
+#product img,
 #most_popular img,
 #collections img {
   width: 100%;
@@ -473,7 +496,8 @@ figure img,
   grid-row: 3/5;
   grid-column: 1/2;
 }
-#just-for_u figure {
+#just-for_u figure,
+#product_desc-wrap figure {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
   display: grid;
